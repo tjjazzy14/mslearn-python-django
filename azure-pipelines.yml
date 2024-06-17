@@ -11,13 +11,13 @@ variables:
   azureServiceConnectionId: '4ed71b51-574a-4b0a-b163-b35cbe803362'
 
   # Web app name
-  webAppName: 'python-cicd-14856'
+  webAppName: 'python-cicd-1838'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  environmentName: 'python-cicd-14856'
+  environmentName: 'python-cicd-1838'
 
   # Project root folder. Point to the folder containing manage.py file.
   #TRM: Updated to add '/Application' to the path
@@ -97,7 +97,7 @@ stages:
             displayName: 'Use Python version'
 
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : python-cicd-14856'
+            displayName: 'Deploy Azure Web App : python-cicd-1838'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appType: 'webAppLinux'
